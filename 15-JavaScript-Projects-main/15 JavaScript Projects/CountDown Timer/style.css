@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    height: 100%;
+    background: url("bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content p {
+    font-size: 1.2rem;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.content h1 span {
+    color: #fb1201;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fb1201;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.lauch-time {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.lauch-time div {
+    /* flex-basis: 100px; */
+    background: #fff;
+    color: #000;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.lauch-time div p {
+    font-size: 50px;
+}
+
+@media (max-width:786px) {
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .lauch-time div{
+        flex-basis: 80px;
+    }
+}

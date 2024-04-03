@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.container{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.to-do-app{
+    width: 100%;
+}
+
+.to-do-app h2{
+    font-size: 1.7rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.inputbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+    width: 100%;
+    background: #f5f6fa;
+}
+
+.inputbox input{
+    padding: 0.7rem;
+    border: none;
+    background: transparent;
+    width: 100%;
+}
+
+.btn{
+    padding: 0.7rem 25px;
+    background: #273c75;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    padding: 0.6rem 2.3rem;
+    border-radius: 8px;
+    margin-block: 20px;
+    position: relative;
+    background: #f5f6fa;
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+ul li span{
+    position: absolute;
+    right: 45px;
+    color: green;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+ul li span:last-child, .deleteIcon{
+    position: absolute;
+    right: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+ul li input{
+    position: absolute;
+    left: 13px;
+    top: 11.5px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    accent-color: #273c75;
+}
+
+.clear{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clearBtn{
+    text-align: center;
+    padding-top: 25px;
+    color: red;
+    cursor: pointer;
+    display: inline;
+}
+
+.checked{
+    text-decoration: line-through;
+    color: #999;
+}
+
+@media (max-width:700px) {
+    .container{
+        width: 100%;
+    }
+}
+

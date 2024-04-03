@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}   
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(199, 234, 247);
+}
+
+.container{
+    margin: 10% auto;
+    text-align: center;
+}
+
+h3{
+    padding-bottom: 30px;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+}
+
+.lorem-form{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+label{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+input{
+    width: 50px;
+    padding: 6px;
+}
+
+.btn{
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    background: #8a1bdf;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    background: #6c00be;
+}
+
+article{
+    max-width: 700px;
+    text-align: center;
+    line-height: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+@media (max-width:750px) {
+    article{
+        width: 100%;
+        padding: 30px;
+    }
+}
+

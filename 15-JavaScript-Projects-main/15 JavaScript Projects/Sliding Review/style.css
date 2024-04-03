@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+body {
+    overflow: auto;
+}
+
+main {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 30px;
+}
+
+.title {
+    font-size: 1.6rem;
+}
+
+.review {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.2rem;
+
+}
+
+#personImg {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+#name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#job {
+    font-size: 0.9rem;
+    color: blue;
+}
+
+#info {
+    font-size: 0.9rem;
+    text-wrap: balance;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-block: 15px;
+    color: blue;
+}
+
+.btn-container i {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.random-btn {
+    border: 2px solid blue;
+    padding: 6px 15px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    color: blue;
+}
+
+@media (max-width: 500px) {
+    .review {
+        width: 100%;
+    }
+}
